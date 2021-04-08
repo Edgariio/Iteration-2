@@ -1,3 +1,18 @@
+h1, h2, h3, h4, h5, h6, form, ul, p {
+ color: black;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body, html {
+   height:100%;
+}
+#canvas {
+   position:absolute;
+   height:100%; width:100%;
+}
 body {
   background-color: #fffbf4;
 }
