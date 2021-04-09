@@ -19,3 +19,6 @@ body {
 nav {
   background-color: white;
 }
+input {
+   padding: 0.5rem 1rem;
+}
