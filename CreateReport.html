@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-	<title>Create Report</title>
-</head>
-
-<body>
-	<h1>CYPRESS</h1> 
-	<h1>CITY OF TORONTO</h1>
-	
-	<center>
-	<h3>Create Your Report Here</h3> 
-	<p>Address:</p>
-	<p><input Address="" value=" "></p>
-	
-
-<h3>Problems At The Site:</h3>
-
-
-
-<p><input type="radio" name="" value="Utility Failures"> Utility Failures</p>
-<p><input type="radio" name="" value="Potholes"> Potholes</p>
-<p><input type="radio" name="" value="City Property Vandalism"> City Property Vandalism</p>
-<p><input type="radio" name="" value="Eroded Streets" > Eroded Streets</p>
-
-<p><input type="radio" name="" value="Tree Collapse"> Tree Collapse</p>
-<p><input type="radio" name="" value="Flooded Streets"> Flooded Streets</p>
-<p><input type="radio" name="" value="Mould And Spore Growth"> Mould And Spore Growth</p>
-<p><input type="radio" name="" value="Garbage or Any Other Road Blocking Objects" > Garbage or Any Other Road Blocking Objects</p>
-
-<p>Other:</p>
-<p><input Other issue to report="" value=" "></p>
-
-<input type="button" onclick="alert('You Have succesfully submitted your report.')" value="Report">
-<input type="button" onclick="alert('You Have succesfully cancelled your report.')" value="Cancel">
-
-<h2><a href="./EditReport.html">Edit Report</a>
-	
-</body>
-
-
+  <head>
+    <title>Create Report</title>
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+		<nav class="shadow-md mb-12">
+			<div class="py-2">
+				<img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
+			</div>
+		</nav>
+		<div class="mx-auto w-6/12 pb-12">
+      <h2 class="text-4xl font-bold">Report an Issue</h2>
+			<br><br>
+			<form class="grid grid-col-6 gap-6" action="">
+				<div class="col-span-4">
+					<label for="Address" class="block mb-2 text-sm font-medium text-gray-700">Address of the issue</label>
+					<input type="text" id="Address" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-6">
+					<h3 class="text-xl font-medium">Problems At The Site</h3>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="utilfail" name="report issue" value="Utility Failure">
+					<label class="w-full" for="utilfail">Utility Failure</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="potholes" name="report issue" value="Potholes">
+					<label class="w-full" for="potholes">Potholes</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="vandalism" name="report issue" value="City Property Vandalism">
+					<label class="w-full" for="vandalism">City Property Vandalism</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="erodedst" name="report issue" value="Eroded Streets">
+					<label class="w-full" for="erodedst">Eroded Streets</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="treecollapse" name="report issue" value="Tree Collapse">
+					<label class="w-full" for="treecollapse">Tree Collapse</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="floodst" name="report issue" value="Flooded Streets">
+					<label class="w-full" for="floodst">Flooded Streets</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="moldandspore" name="report issue" value="Mold and Spore Growth">
+					<label class="w-full" for="moldandspore">Mold and Spore Growth</label>
+				</div>
+				<div class="col-span-3 flex items-center">
+					<input class="w-8" type="radio" id="garbage" name="report issue" value="Garbage or any other Road Blocking Objects">
+					<label class="w-full" for="garbage">Garbage or any other Road Blocking Objects</label>
+				</div>
+				<div class="col-span-6 flex items-center">
+					<input class="w-8" type="radio" id="other" name="report issue" value="Other Issue">
+					<label class="w-full" for="other">Other Issue</label>
+				</div>
+				<div class="col-span-4">
+					<label for="othertext" class="block mb-2 text-sm font-medium text-gray-700">Describe the issue</label>
+					<input type="text" id="othertext" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+			</form>
+			<br><br>
+			<div class="flex space-x-4 justify-end">
+				<a href="./Login.html" class="bg-green-800 text-white font-bold px-6 py-2 rounded-lg" onclick="alert('You Have successfully submitted your report.')">
+					Submit Report
+				</a>
+				<a href="./Main Menu.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg">
+					Back
+				</a>
+			</div>
+		</div>
+  </body>
 </html>
