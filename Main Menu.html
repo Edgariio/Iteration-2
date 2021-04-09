@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   <title>Main Menu</title>
-   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<link href="./style.css" rel="stylesheet">
-	<style>
-	body, html {
-   height:135%;
-}
-	</style>
-   </head>
+  <head>
+    <title>Main Menu</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link href="./style.css" rel="stylesheet">
+  </head>
   <body>
-  <br>
-  <center>
-  <h2 class="text-4xl font-bold">Main Menu</h2>
-  <br><br>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.idyllwildarts.org%2Fwp-content%2Fuploads%2F2016%2F09%2Fblank-profile-picture.jpg&f=1&nofb=1" width="100" height="200" alt="Image not available">
-	<br>
-	<a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Manage Account
-	</a>
-	<br><br>
-	<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80" width="200" height="300" alt="Image not available">
-	<br>
-	<a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Report a Problem
-	</a>
-	<br><br>
-	<img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" width="200" height="300" alt="Image not available">
-	<br>
-	<a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Edit Report
-	</a>
-	<br><br>
-	<img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="200" height="300" alt="Image not available">
-	<br>
-	<a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Vote
-	</a>
-	<br><br>
-	<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F03%2FLight-Bulb-PNG-File.png&f=1&nofb=1" width="100" height="200" alt="Image not available">
-	<br>
-	<a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Suggest
-	</a>
-	<br><br>
-	<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-flOdBWdrnsU%2FUgb5HNBulqI%2FAAAAAAAAHRk%2FXnY6Y_WKoPo%2Fs1600%2Fquestion%2Bmark.png&f=1&nofb=1" width="100" height="150" alt="Image not available">
-	<br>
-	<a href="./FAQ.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	FAQ
-	</a>
-	<br><br>
-	<img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="200" height="300" alt="Image not available">
-	<br>
-	<a href="./Contact Us.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Contact Us
-	</a>
-	<br><br><br>
-	<a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Logout
-	</a>
-	</center>
+		<nav class="shadow-md mb-12">
+			<div class="py-2">
+				<img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
+			</div>
+		</nav>
+    <div class="mx-auto w-6/12 pb-12">
+      <h2 class="text-4xl font-bold">Main Menu</h2>
+      <br>
+			<div class="grid grid-cols-6 gap-6">
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-green-700 p-4">
+						<i class="uil uil-user-check text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Manage Account</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./FAQ.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-blue-500 p-4">
+						<i class="uil uil-comment-question text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Frequently asked Questions</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-yellow-600 p-4">
+						<i class="uil uil-file-exclamation text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Report a Problem</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-yellow-400 p-4">
+						<i class="uil uil-file-edit-alt text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Edit Report(s)</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-pink-700 p-4">
+						<i class="uil uil-edit text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Vote on Reports</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-purple-600 p-4">
+						<i class="uil uil-comment-alt-dots text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Suggest a Solution</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-green-500 p-4">
+						<i class="uil uil-at text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Contact Us</p>
+				</a>
+			</div>
+			<div class="flex space-x-4 justify-end mt-6">
+				<a href="./Landing Page.html" class="bg-red-800 text-white font-bold px-6 py-2 rounded-lg">
+				Logout
+				</a>
+			</div>
+		</div>
   </body>
 </html>
