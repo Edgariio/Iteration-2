@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6, form, ul, p {
- color: black;
+ color: rgb(56, 56, 56);
 }
 * {
    margin: 0;
@@ -18,4 +18,7 @@ body {
 }
 nav {
   background-color: white;
+}
+input {
+   padding: 0.5rem 1rem;
 }

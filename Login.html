@@ -8,28 +8,34 @@
 </head>
   
 <body>
-	<br><br><br>
-    <center>
-	<h2 class="text-4xl font-bold">Login</h2>
-	<br>
-	<form>
-	User Name:
-	<input type="text" name="Name" size="20">
-	<br><br><br>
-	Password:
-	<input type="text" name="Course" size="20">
-	</form>
-	<br><br>
-	<div class="flex space-x-4 justify-center">
-	&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="./Main Menu.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Confirm
-	</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="./Landing Page.html" class="bg-gray-800 text-white font-bold px-6 py-2 rounded-lg">
-	Cancel
-	</a>
-	<div>
-	</center>
+	<nav class="shadow-md mb-12">
+		<div class="py-2">
+			<img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
+		</div>
+	</nav>
+	<div class="mx-auto w-3/12">
+		<h2 class="text-4xl font-bold text-center">Login</h2>
+		<br>
+		<form class="mb-12">
+			<div class="mb-6">
+				<label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+				<input type="text" name="email" id="email" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+			</div>
+			<div class="mb-6">
+				<label for="password" class="block mb-2 text-sm font-medium text-gray-700">Password</label>
+				<input type="text" name="password" id="password" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+			</div>
+		</form>
+		<div class="flex space-x-4 justify-center">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="./Main Menu.html" class="bg-green-800 text-white font-bold px-6 py-2 rounded-lg">
+		Confirm
+		</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="./Landing Page.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg">
+		Cancel
+		</a>
+		<div>
+	</div>
 </body>
 </html>
