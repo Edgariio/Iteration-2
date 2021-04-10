@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>Register</title>
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet">
+   </head>
+  <body>
+		<nav class="shadow-md mb-12">
+			<div class="py-2">
+				<img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
+			</div>
+		</nav>
+		<div class="mx-auto w-5/12">
+			<h2 class="text-4xl font-bold text-center">Change Account Details</h2>
+			<br><br>
+			<div class="grid grid-cols-6 gap-6">
+				<div class="col-span-3">
+					<label for="firstname" class="block mb-2 text-sm font-medium text-gray-700">First name</label>
+					<input type="text" id="firstname" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-3">
+					<label for="lastname" class="block mb-2 text-sm font-medium text-gray-700">Last name</label>
+					<input type="text" id="lastname" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-3">
+					<label for="streetaddress" class="block mb-2 text-sm font-medium text-gray-700">Street address</label>
+					<input type="text" id="streetaddress" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-3">
+					<label for="phonenum" class="block mb-2 text-sm font-medium text-gray-700">Phone number</label>
+					<input type="text" id="phonenum" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-4">
+					<label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+					<input type="text" id="email" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-3">
+					<label for="password" class="block mb-2 text-sm font-medium text-gray-700">Password</label>
+					<input type="text" id="password" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+				<div class="col-span-3">
+					<label for="password2" class="block mb-2 text-sm font-medium text-gray-700">Re-enter Password</label>
+					<input type="text" id="password2" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring">
+				</div>
+			</div>
+			<br><br>
+			<div class="flex space-x-4 justify-end">
+				<a href="./Main Menu.html" class="bg-green-800 text-white font-bold px-6 py-2 rounded-lg" onclick="alert('You Have successfully changed your account details')" >
+					Confirm
+				</a>
+				<a href="./Main Menu.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg">
+					Back
+				</a>
+			</div>
+		</div>
+  </body>
+</html>
