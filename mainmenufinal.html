@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Menu</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+
+	<style>
+
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 250px;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 3000px;
+ 
+
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+  <body>
+		<nav class="shadow-md mb-12">
+			<div class="py-2">
+				<img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
+			</div>
+		</nav>
+    <div class="mx-auto w-6/12 pb-12">
+      <h2 class="text-4xl font-bold">Main Menu</h2>
+      <br>
+			<div class="grid grid-cols-6 gap-6">
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./Manage Account.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-green-700 p-4">
+						<i class="uil uil-user-check text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Manage Account</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./FAQ.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-blue-500 p-4">
+						<i class="uil uil-comment-question text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Frequently asked Questions</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./CreateReport.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-yellow-600 p-4">
+						<i class="uil uil-file-exclamation text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Report a Problem</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="EditReport.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-yellow-400 p-4">
+						<i class="uil uil-file-edit-alt text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Edit Report(s)</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./Vote.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-pink-700 p-4">
+						<i class="uil uil-edit text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Vote on Reports</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./SuggestASolution.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-purple-600 p-4">
+						<i class="uil uil-comment-alt-dots text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Suggest a Solution</p>
+				</a>
+				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./Contact Us.html">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-green-500 p-4">
+						<i class="uil uil-at text-7xl text-white"></i>
+					</div>
+					<p class="text-xl font-medium mt-4 text-center">Contact Us</p>
+				</a>
+			</div>
+			<div class="flex space-x-4 justify-end mt-6">
+				<a href="./Landing Page.html" class="bg-red-800 text-white font-bold px-6 py-2 rounded-lg">
+				Logout
+				</a>
+			</div>
+		
+			
+			<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Mini Survey</h1>
+
+    <label for="ans1"><b>What are Toronto's greatests strengths with respect to safety?
+</b></label>
+    <input type="text" placeholder="" name="ans1" required>
+
+    <label for="ans2"><b>What are Toronto's greatest weaknesses with respect to safety? </b></label>
+    <input type="text" placeholder="" name="ans2" required>
+   
+    <label for="ans3"><b> What would you like to see be done specifically to make this city better? </b </label>
+    <input type="text" placeholder="" name="ans3" required>
+   
+    <label for="ans4"><b> How would you rate Toronto's infrastructure maintenance as of now? </b </label>
+   
+    <br>
+    <br>
+   
+   
+    <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Excellent</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">good</label><br>
+ 
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other"> Adequate </label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other"> Bad </label> <br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other"> Terrible </label><br>
+ 
+  <br>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+</div>
+
+		
+  </body>
+</html>
