@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Create Report</title>
+    <title>Edit Report - Vandalism</title>
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
   </head>
@@ -12,13 +12,13 @@
 			</div>
 		</nav>
 		<div class="mx-auto w-6/12 pb-12">
-      <h2 class="text-4xl font-bold">Report an Issue</h2>
+      <h2 class="text-4xl font-bold">Modify report details</h2>
 			<br><br>
 			<form class="grid grid-col-6 gap-6" action="">
 				<div class="col-span-6">
 					<label for="Address" class="block mb-2 text-sm font-medium text-gray-700">Address of the issue</label>
-					<input type="text" id="Address" class="w-6/12 rounded-md shadow-md border-gray-300 focus:outline-none focus:ring" placeholder="350 Victoria St, Toronto, ON">
-					<iframe class="w-full h-80 rounded-l my-4" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlRMcQzXL1IkR9NYlkdaL7eg&key=AIzaSyBWpvqJoH0rnvTyK1NjPxpxHo3U0j1aW1Y"></iframe>
+					<input type="text" id="Address" class="w-6/12 rounded-md shadow-md border-gray-300 focus:outline-none focus:ring" value="3256 Thompson Street, Toronto, ON">
+					<iframe class="w-full h-80 rounded-l my-4" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:EiRUaG9tcHNvbiBTdCwgVG9yb250bywgT04gTTRNLCBDYW5hZGEiLiosChQKEgm_F3J0bMvUiRESPa7A5ybA8BIUChIJpTvG15DL1IkRd8S0KlBVNTI&key=AIzaSyBWpvqJoH0rnvTyK1NjPxpxHo3U0j1aW1Y"></iframe>
 				</div>
 				<div class="col-span-6">
 					<h3 class="text-xl font-medium">Problems At The Site</h3>
@@ -32,7 +32,7 @@
 					<label class="w-full" for="potholes">Potholes</label>
 				</div>
 				<div class="col-span-3 flex items-center">
-					<input class="w-8" type="radio" id="vandalism" name="report issue" value="City Property Vandalism">
+					<input class="w-8" type="radio" id="vandalism" name="report issue" value="City Property Vandalism" checked>
 					<label class="w-full" for="vandalism">City Property Vandalism</label>
 				</div>
 				<div class="col-span-3 flex items-center">
@@ -63,11 +63,11 @@
 			</form>
 			<br><br>
 			<div class="flex space-x-4 justify-end">
-				<a href="./Main Menu.html" class="bg-green-800 text-white font-bold px-6 py-2 rounded-lg" onclick="alert('You Have successfully submitted your report.')">
-					Submit Report
+				<a href="./Main Menu.html" class="bg-green-800 text-white font-bold px-6 py-2 rounded-lg" onclick="alert('You Have successfully updated your report.')">
+					Update Report
 				</a>
-				<a href="./Main Menu.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg">
-					Back
+				<a href="./EditReport.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg">
+					Cancel
 				</a>
 			</div>
 		</div>

@@ -8,95 +8,55 @@
   </head>
 
 	<style>
+    .open-button {
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+    }
+    .form-popup {
+      display: none;
+      z-index: 9;
+    }
+    .form-container {
+      background-color: #fffbf4;
+    }
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+  </style>
 
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "flex";
+    }
 
-
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 250px;
-}
-
-
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-
-.form-container {
-  max-width: 3000px;
- 
-
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-</style>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-
-
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
   <body>
 		<nav class="shadow-md mb-12">
 			<div class="py-2">
 				<img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
 			</div>
 		</nav>
-    <div class="mx-auto w-6/12 pb-12">
+    <div class="mx-auto w-6/12 pb-24">
       <h2 class="text-4xl font-bold">Main Menu</h2>
       <br>
 			<div class="grid grid-cols-6 gap-6">
@@ -124,12 +84,6 @@ function closeForm() {
 					</div>
 					<p class="text-xl font-medium mt-4 text-center">Edit Report(s)</p>
 				</a>
-				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./DeleteReport.html">
-					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-red-800 p-4">
-						<i class="uil uil-edit-alt text-7xl text-white"></i>
-					</div>
-					<p class="text-xl font-medium mt-4 text-center">Delete Report</p>
-				</a>
 				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./Vote.html">
 					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-pink-700 p-4">
 						<i class="uil uil-edit text-7xl text-white"></i>
@@ -149,7 +103,7 @@ function closeForm() {
 					<p class="text-xl font-medium mt-4 text-center">Contact Us</p>
 				</a>
 				<a class="col-span-3 flex flex-col items-center py-8 shadow-lg rounded-lg flex bg-white transition duration-300 hover:bg-gray-100" href="./TellAFriend.html">
-					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-green-500 p-4">
+					<div class="flex justify-center items-center w-32 h-32 rounded-full bg-pink-500 p-4">
 						<i class="uil uil-check text-7xl text-white"></i>
 					</div>
 					<p class="text-xl font-medium mt-4 text-center">Tell a Friend</p>
@@ -160,57 +114,57 @@ function closeForm() {
 				Logout
 				</a>
 			</div>
-		
-			
-			<button class="open-button" onclick="openForm()">Open Survey</button>
+    </div>	
+    <button class="fixed right-4 bottom-4 bg-blue-600 text-white text-2xl font-bold px-8 py-4 rounded-lg" onclick="openForm()">Open Survey</button>
 
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Mini Survey</h1>
-
-    <label for="ans1"><b>What are Toronto's greatests strengths with respect to safety?
-</b></label>
-    <input type="text" placeholder="" name="ans1" required>
-
-    <label for="ans2"><b>What are Toronto's greatest weaknesses with respect to safety? </b></label>
-    <input type="text" placeholder="" name="ans2" required>
-   
-    <label for="ans3"><b> What would you like to see be done specifically to make this city better? </b </label>
-    <input type="text" placeholder="" name="ans3" required>
-   
-    <label for="ans4"><b> How would you rate Toronto's infrastructure maintenance as of now? </b </label>
-   
-    <br>
-    <br>
-   
-   
-    <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Excellent</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">good</label><br>
- 
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other"> Adequate </label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other"> Bad </label> <br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other"> Terrible </label><br>
- 
-  <br>
-
-    <button type="submit" class="btn">Submit</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-
-
-
-
-
-
-</div>
-
-		
+    <div class="form-popup items-center justify-center fixed inset-0 bg-black bg-opacity-80" id="myForm">
+      <form class="form-container w-6/12 grid gap-6 rounded-xl shadow-xl bg-white px-8 py-12" action="/action_page.php" class="form-container">
+        <h2 class="text-3xl font-bold">CYPRESS Survey</h2>
+        <div>
+          <label class="block text-md font-medium py-2" for="ans1">What are Toronto's greatest strengths with respect to safety?</label>
+          <input type="text" name="ans1" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring" required>
+        </div>
+        <div>
+          <label class="block text-md font-medium py-2" for="ans2">What are Toronto's greatest weaknesses with respect to safety?</label>
+          <input type="text" name="ans2" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring" required>
+        </div>
+        <div>
+          <label class="block text-md font-medium py-2" for="ans3">What would you like to see be done specifically to make this city better?</label>
+          <input type="text" name="ans3" class="w-full rounded-md shadow-md border-gray-300 focus:outline-none focus:ring" required>
+        </div>
+        <div class="grid gap-2">
+          <h2 class="text-md font-medium">How would you rate Toronto's infrastructure maintenance as of now?</h2>
+          <div class="flex items-center">
+            <input class="w-8" type="radio" id="rate5" name="rating" value="Excellent">
+            <label class="w-full" for="rate5">Excellent</label>
+          </div>
+          <div class="flex items-center">
+            <input class="w-8" type="radio" id="rate4" name="rating" value="Very Good">
+            <label class="w-full" for="rate4">Very Good</label>
+          </div>
+          <div class="flex items-center">
+            <input class="w-8" type="radio" id="rate3" name="rating" value="Good">
+            <label class="w-full" for="rate3">Good</label>
+          </div>
+          <div class="flex items-center">
+            <input class="w-8" type="radio" id="rate2" name="rating" value="Bad">
+            <label class="w-full" for="rate2">Bad</label>
+          </div>
+          <div class="flex items-center">
+            <input class="w-8" type="radio" id="rate1" name="rating" value="Terrible">
+            <label class="w-full" for="rate1">Terrible</label>
+          </div>
+        </div>
+        <br>
+        <div class="flex space-x-4 justify-end">
+          <a href="" class="bg-green-800 text-white font-bold px-6 py-2 rounded-lg" onclick="alert('You Have successfully submitted the survey!')">
+            Submit Survey
+          </a>
+          <button class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg" onclick="closeForm()">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
