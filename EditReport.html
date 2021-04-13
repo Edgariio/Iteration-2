@@ -1,28 +1,86 @@
 <!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Create Report</title>
-</head>
-
-<body>
-	<h1>CYPRESS</h1> 
-	<h1>CITY OF TORONTO</h1>
-	
-	<center>
-	<h3>Edit Your Report Here</h3> 
-	<p>Type in which report you want to edit:</p>
-	<p><input Report="Report" value=" "></p>
-	<p>Make your changes in this text box below:</p>
-	<p><input Report="changes" value=" "></p>
-	<h2><a href="./Main Menu.html">Confirm Changes</a>
-	
-		
-	
-	
-	
-	
-</body>
-
-
+<html lang="eng">
+   <head>
+      <title>Edit Report</title>
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <script>
+       function deleteReport(idName) {
+        document.getElementById(idName).style.display = "none";
+        alert('You have successfully removed the report!');
+       }
+   </script>
+   <body>
+      <nav class="shadow-md mb-12">
+         <div class="py-2">
+            <img class="px-8 h-20" src="logo.png" alt="Cypress Logo">
+         </div>
+      </nav>
+      <div class="mx-auto w-6/12">
+         <h2 class="text-2xl font-bold">Select a report to modify</h2>
+         <br>
+         <div class="flex mx-auto space-x-4 py-4 w-full">
+            <p class="flex-initial w-2/5 font-medium">Address</p>
+            <p class="flex-initial w-2/5 font-medium">Problem Type</p>
+            <div class="flex-grow"></div>
+         </div>
+         <div id="report1" class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+            <p class="flex-initial w-2/5">3256 Thompson Drive</p>
+            <p class="flex-initial w-2/5">Vandalism</p>
+            <a href="./EditSingleReport.html" class="flex-auto bg-blue-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Edit
+            </a>
+            <button onClick="deleteReport('report1')" class="flex-auto bg-red-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Delete
+            </button>
+         </div>
+         <div id="report2" class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+            <p class="flex-initial w-2/5">290 Bremner Blvd</p>
+            <p class="flex-initial w-2/5">Fallen Tree</p>
+            <a href="./EditSingleReport.html" class="flex-auto bg-blue-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Edit
+            </a>
+            <button onClick="deleteReport('report2')" class="flex-auto bg-red-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Delete
+            </button>
+         </div>
+         <div id="report3" class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+            <p class="flex-initial w-2/5">285 Prudence St</p>
+            <p class="flex-initial w-2/5">Pothole</p>
+            <a href="./EditSingleReport.html" class="flex-auto bg-blue-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Edit
+            </a>
+            <button onClick="deleteReport('report3')" class="flex-auto bg-red-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Delete
+            </button>
+         </div>
+         <div id="report4" class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+            <p class="flex-initial w-2/5">3275 Lyndon St</p>
+            <p class="flex-initial w-2/5">Fallen Streetlight</p>
+            <a href="./EditSingleReport.html" class="flex-auto bg-blue-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Edit
+            </a>
+            <button onClick="deleteReport('report4')" class="flex-auto bg-red-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Delete
+            </button>            
+         </div>
+         <div id="report5" class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+            <p class="flex-initial w-2/5">1477 Lyon Ave</p>
+            <p class="flex-initial w-2/5">Snow</p>
+            <a href="./EditSingleReport.html" class="flex-auto bg-blue-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Edit
+            </a>
+            <button onClick="deleteReport('report5')" class="flex-auto bg-red-800 text-white font-bold px-4 py-2 rounded-lg text-center justify-end	">
+            Delete
+            </button>
+         </div>
+         <br><br>
+         <div class="flex space-x-6 justify-end"> 
+            <a href="./Main Menu.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg"> 
+            Back 
+            </a>
+         </div>
+      </div>
+   </body>
 </html>

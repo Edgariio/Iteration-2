@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Suggest a Solution</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<style>
+
+ 
+.butt {
+  background-color: #808080;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;  
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 8px;
+}
+
+
+
+ 
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 2.5px solid #000000;
+  z-index: 9;
+}
+
+ 
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+ 
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+ 
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+ 
+.form-container .btn {
+  background-color: #4CAF50;
+
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+   
+}
+
+
+ /* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #DC143C;
+}*/
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.9;
+}
+</style>
+
+
+
+
+    <body id="id1">
+        <nav class="shadow-md mb-12">
+            <div class="py-2">
+                <img class="mx-auto h-20" src="logo.png" alt="Cypress Logo">
+            </div>
+        </nav>
+        <div class="mx-auto w-6/12">
+            <h2 class="text-2xl font-bold">Suggest a Solution for these Reported Problems.</h2>
+            <br>
+            <div class="flex mx-auto space-x-4 py-4 w-full">
+                <p class="flex-initial w-2/5 font-medium">Address</p>
+                <p class="flex-initial w-2/5 font-medium">Problem Type</p>
+                <div class="flex-grow"></div>
+            </div>
+            <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">3256 Thompson Drive</p>
+                <p class="flex-initial w-2/5">Vandalism</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+            <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">290 Bremner Blvd</p>
+                <p class="flex-initial w-2/5">Fallen Tree</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+            <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">285 Prudence St</p>
+                <p class="flex-initial w-2/5">Pothole</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+            <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">3275 Lyndon St</p>
+                <p class="flex-initial w-2/5">Fallen Streetlight</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+            <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">1477 Thompson Drive</p>
+                <p class="flex-initial w-2/5">Pothole</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+
+	      <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">294 Bremner Blvd</p>
+                <p class="flex-initial w-2/5">Pothole</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+
+	    <div class="flex mx-auto space-x-4 py-4 border-t-2 w-full">
+                <p class="flex-initial w-2/5">3256 Thompson Drive</p>
+                <p class="flex-initial w-2/5">Vandalism</p>
+                <a href="./SuggestASolutionInput.html" class="flex-auto bg-gray-800 text-white font-bold px-6 py-2 rounded-lg text-center justify-end	">
+                    Suggest
+                </a>
+            </div>
+
+
+
+            <br><br>
+            <div class="flex space-x-6 justify-end"> 
+                <a href="./Main Menu.html" class="bg-gray-600 text-white font-bold px-6 py-2 rounded-lg"> 
+                    Back 
+                </a>
+            </div>
+
+
+	     <button class="butt" onclick="openRankings()" >Open Rankings</button>
+
+<div class="form-popup" id="myForm" style = "font-family: Arial"; Helvetica, sans-serif;>
+  <form action="/action_page.php" class="form-container">
+    <h1><b>Rankings</b></h1> 
+	
+    <P> The most repeated number of problems are<b> potholes </b> with <b>3</b>, followed by <b>vandalism </b> with <b>2</b>,<b> Fallen streetlight </b> with <b>1</b> and <b>Fallen tree </b> with <b>1</b>. </P> 
+    
+    <p> The location with the most problems is <b>Thompson Drive </b> with <b>3</b>, followed by <b>Bremner Blvd</b> with <b>2</b>, and <b> Prudence St. </b> and <b>Lyndon St </b> with <b>1</b>             </P>
+	<p id = "demoo"> </p>
+    
+    <button type="button" class="btn cancel" onclick="closeRankings()">Close</button>
+  </form>
+</div>
+
+<script>
+function openRankings() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeRankings() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+
+</script>
+
+	    
+	
+        </div>
+        
+    </body>
+</html>
